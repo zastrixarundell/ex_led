@@ -7,7 +7,7 @@ A Phoenix webserver which uses websockets to send DEC data to an ESP8266 which u
 You will need to declare variables in the `src/src.ino` file or create a `src/Config.h` file and place the variables there. Here is an example of a `src/Config.h`:
 ```cpp
 #define SSID "WiFi SSID"
-#define PASSWORD "This is my awesome paswword"
+#define PASSWORD "This is my awesome password"
 #define WEBSOCKETURL "ws://192.168.0.102:4000/controller/websocket?secret_key=SECRET_SAYS_WHAT"
 ```
 
