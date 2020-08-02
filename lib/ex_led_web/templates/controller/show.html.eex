@@ -8,40 +8,40 @@
   </thead>
   <tbody>
     <tr>
-      <td>Increase</td>
-      <td>Decrease</td>
-      <td>Off</td>
-      <td>On</td>
+      <td id="0xF700FF" class="controller-button">Increase</td>
+      <td id="0xF7807F" class="controller-button">Decrease</td>
+      <td id="0xF740BF" class="controller-button">Off</td>
+      <td id="0xF7C03F" class="controller-button">On</td>
     </tr>
     <tr>
-      <td>Red 0</td>
-      <td>Green 0</td>
-      <td>Blue 0</td>
-      <td>White</td>
+      <td id="0xF720DF" class="controller-button">Red 0</td>
+      <td id="0xF7A05F" class="controller-button">Green 0</td>
+      <td id="0xF7609F" class="controller-button">Blue 0</td>
+      <td id="0xF7E01F" class="controller-button">White</td>
     </tr>
     <tr>
-      <td>Red 1</td>
-      <td>Green 1</td>
-      <td>Blue 1</td>
-      <td>Flash</td>
+      <td id="0xF710EF" class="controller-button">Red 1</td>
+      <td id="0xF7906F" class="controller-button">Green 1</td>
+      <td id="0xF750AF" class="controller-button">Blue 1</td>
+      <td id="0xF7D02F" class="controller-button">Flash</td>
     </tr>
     <tr>
-      <td>Red 2</td>
-      <td>Green 2</td>
-      <td>Blue 2</td>
-      <td>Strobe</td>
+      <td id="0xF730CF" class="controller-button">Red 2</td>
+      <td id="0xF7B04F" class="controller-button">Green 2</td>
+      <td id="0xF7708F" class="controller-button">Blue 2</td>
+      <td id="0xF7F00F" class="controller-button">Strobe</td>
     </tr>
     <tr>
-      <td>Red 3</td>
-      <td>Green 3</td>
-      <td>Blue 3</td>
-      <td>Fade</td>
+      <td id="0xF708F7" class="controller-button">Red 3</td>
+      <td id="0xF78877" class="controller-button">Green 3</td>
+      <td id="0xF748B7" class="controller-button">Blue 3</td>
+      <td id="0xF7C837" class="controller-button">Fade</td>
     </tr>
     <tr>
-      <td>Red 4</td>
-      <td>Green 4</td>
-      <td>Blue 4</td>
-      <td>Smooth</td>
+      <td id="0xF728D7" class="controller-button">Red 4</td>
+      <td id="0xF7A857" class="controller-button">Green 4</td>
+      <td id="0xF76897" class="controller-button">Blue 4</td>
+      <td id="0xF7E817" class="controller-button">Smooth</td>
     </tr>
   </tbody>
 </table>
