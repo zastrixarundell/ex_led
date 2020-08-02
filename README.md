@@ -10,6 +10,8 @@ You will need to declare variables in the `src/src.ino` file or create a `src/Co
 #define SSID "WiFi SSID"
 #define PASSWORD "This is my awesome password"
 #define WEBSOCKETURL "ws://192.168.0.102:4000/controller/websocket?secret_key=SECRET_SAYS_WHAT"
+#define DEVICE_ID "living_room"
+#define DEVICE_NAME "Backlight Table"
 ```
 
 The `Config.h` file is in `.gitignore` so I don't accidentally put my Server or WiFi credentials on the net.

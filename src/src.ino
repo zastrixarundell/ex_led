@@ -14,8 +14,8 @@ const char* ssid = SSID;
 const char* password = PASSWORD;
 const char* websocketUrl = WEBSOCKETURL;
 
-const char* deviceId = "living_room";
-const char* deviceName = "Backlight Table";
+const char* deviceId = DEVICE_ID;
+const char* deviceName = DEVICE_NAME;
 
 unsigned long lastSent;
 

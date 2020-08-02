@@ -6,7 +6,6 @@
 
 IRsend irsend(D6);
 
-
 using namespace websockets;
 
 #define STATUS 16
