@@ -1,5 +1,6 @@
 # ExLed
 A Phoenix webserver which uses websockets to send DEC data to an ESP8266 which utilizes an IR blaster to send NEC information.
+![Banner image](https://raw.githubusercontent.com/zastrixarundell/ex_led/master/images/banner.png "Banner image")
 
 ## Setting everything up
 

@@ -29,7 +29,7 @@
       <td><button id="0xF730CF" class="controller-button button-red-2">Red 2</button></td>
       <td><button id="0xF7B04F" class="controller-button button-green-2">Green 2</button></td>
       <td><button id="0xF7708F" class="controller-button button-blue-2">Blue 2</button></td>
-      <td><button id="0xF7F00F" class="controller-button button-option">Smooth</button></td>
+      <td><button id="0xF7F00F" class="controller-button button-option">Strobe</button></td>
     </tr>
     <tr>
       <td><button id="0xF708F7" class="controller-button button-red-3">Red 3</button></td>
