@@ -24,7 +24,7 @@ config :logger, :console,
 config :phoenix, :json_library, Jason
 
 config :ex_led, ExLedWeb.ControllerSocket,
-  secret_auth_key: "SECRET_SAYS_WHAT"
+  secret_auth_key: System.get_env("SECRET_AUTH_KEY") || "SECRET_SAYS_WHAT"
 
 config :ex_led, ExLedWeb.Router,
   username: System.get_env("USERNAME") || "username",
