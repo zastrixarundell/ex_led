@@ -9,5 +9,4 @@ defmodule ExLedWeb.UserChannel do
     ExLedWeb.ControllerChannel.send_ir_to_controller(id, code)
     {:noreply, socket}
   end
-
 end
