@@ -53,7 +53,11 @@ void setup()
 
   client.onMessage(onMessageCallback);
   client.onEvent(onEventsCallback);
-  
+
+  #if defined(ORIGIN)
+    client.addHeader("Origin", ORIGIN)
+  #endif
+
   client.connect(websocketUrl);
 
   sendPhoenixJoin(client, deviceId, deviceName);

@@ -13,7 +13,7 @@ config :ex_led, ExLedWeb.Endpoint,
   url: [host: "ex_led.gigalixirapp.com", port: 443],
   cache_static_manifest: "priv/static/cache_manifest.json",
   check_origin: [
-    "ex_led.gigalixirapp.com"
+    "https://ex_led.gigalixirapp.com"
   ]
 
 # Do not print debug messages in production
