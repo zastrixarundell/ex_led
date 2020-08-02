@@ -3,16 +3,13 @@
 <table>
   <thead>
     <tr>
-      <th>Id</th>
       <th>Name</th>
-
       <th></th>
     </tr>
   </thead>
   <tbody>
 <%= for controller <- @controller do %>
     <tr>
-      <td><%= controller.id %></td>
       <td><%= controller.name %></td>
 
       <td>
