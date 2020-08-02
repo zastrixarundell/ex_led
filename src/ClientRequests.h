@@ -26,20 +26,20 @@ void sendPhoenixJoin(WebsocketsClient& client, const char* deviceId, const char*
 
 void onMessageCallback(WebsocketsMessage message)
 {
-    String text = message.data();
+  String text = message.data();
 
-    DynamicJsonDocument doc(400);
-    deserializeJson(doc, text);
+  DynamicJsonDocument doc(400);
+  deserializeJson(doc, text);
 
-    String event = doc["event"];
-    Serial.print("Got Message from event: ");
-    Serial.println(event);
+  String event = doc["event"];
+  Serial.print("Got Message from event: ");
+  Serial.println(event);
 
-    if (event == "ir_write")
-    {
-      String code = doc["payload"]["code"];
-      writeIR(irsend, code);
-    }
+  if (event == "ir_write")
+  {
+    String code = doc["payload"]["code"];
+    writeIR(irsend, code);
+  }
 }
 
 void onEventsCallback(WebsocketsEvent event, String data)
