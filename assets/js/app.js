@@ -29,8 +29,28 @@ var output = window.location.href.split("/").pop();
 let elements = document.getElementsByClassName("controller-button");
 
 for(let i = 0; i < elements.length; i++)
-    elements[i].addEventListener('click', sendClick, false);
+  elements[i].addEventListener('click', sendClick, false);
 
 function sendClick(click){
-    channel.push('button:press', {id: output, code: parseInt(click.target.id, 16)});
+  channel.push('button:press', {id: output, code: parseInt(click.target.id, 16)});
+}
+
+let repeatable = document.getElementsByClassName("button-repeatable");
+
+for(let i = 0; i < repeatable.length; i++)
+{
+  repeatable[i].addEventListener('mousedown', onClick, false);
+  repeatable[i].addEventListener('mouseup', onRelease, false);
+}
+
+let interval = null;
+
+function onClick(event) {
+  interval = setInterval(function() {
+    channel.push('button:press', {id: output, code: parseInt(event.target.id, 16)});
+  }, 100)
+}
+
+function onRelease() {
+  clearInterval(interval);
 }

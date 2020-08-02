@@ -8,8 +8,8 @@
   </thead>
   <tbody>
     <tr>
-      <td><button id="0xF700FF" class="controller-button button-white">Increase</button></td>
-      <td><button id="0xF7807F" class="controller-button button-white">Decrease</button></td>
+      <td><button id="0xF700FF" class="controller-button button-white button-repeatable">Increase</button></td>
+      <td><button id="0xF7807F" class="controller-button button-white button-repeatable">Decrease</button></td>
       <td><button id="0xF740BF" class="controller-button button-black">Off</button></td>
       <td><button id="0xF7C03F" class="controller-button button-red">On</button></td>
     </tr>
