@@ -1,0 +1,49 @@
+<h1>Showing <%= @controller.name %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Increase</td>
+      <td>Decrease</td>
+      <td>Off</td>
+      <td>On</td>
+    </tr>
+    <tr>
+      <td>Red 0</td>
+      <td>Green 0</td>
+      <td>Blue 0</td>
+      <td>White</td>
+    </tr>
+    <tr>
+      <td>Red 1</td>
+      <td>Green 1</td>
+      <td>Blue 1</td>
+      <td>Flash</td>
+    </tr>
+    <tr>
+      <td>Red 2</td>
+      <td>Green 2</td>
+      <td>Blue 2</td>
+      <td>Strobe</td>
+    </tr>
+    <tr>
+      <td>Red 3</td>
+      <td>Green 3</td>
+      <td>Blue 3</td>
+      <td>Fade</td>
+    </tr>
+    <tr>
+      <td>Red 4</td>
+      <td>Green 4</td>
+      <td>Blue 4</td>
+      <td>Smooth</td>
+    </tr>
+  </tbody>
+</table>
+
+<span><%= link "Back", to: Routes.controller_path(@conn, :index) %></span>

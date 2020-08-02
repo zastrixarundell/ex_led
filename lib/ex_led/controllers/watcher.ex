@@ -1,4 +1,4 @@
-defmodule ExLed.Controller.Watcher do
+defmodule ExLed.Controllers.Watcher do
   use GenServer
 
   ## Client API

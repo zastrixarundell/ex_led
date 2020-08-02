@@ -12,7 +12,7 @@ defmodule ExLed.Application do
       ExLedWeb.Endpoint,
       # Starts a worker by calling: ExLed.Worker.start_link(arg)
       # {ExLed.Worker, arg},
-      {ExLed.Controller.Watcher, :controller}
+      {ExLed.Controllers.Watcher, :controller}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

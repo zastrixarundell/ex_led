@@ -1,6 +1,6 @@
 defmodule ExLedWeb.ControllerChannel do
   use Phoenix.Channel
-  alias ExLed.Controller.Watcher
+  alias ExLed.Controllers.Watcher
 
   def join("controller:" <> controller_name, payload, socket) do
     socket = socket |> assign(:name, payload["name"])

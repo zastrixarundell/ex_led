@@ -16,7 +16,8 @@ defmodule ExLedWeb.Router do
   scope "/", ExLedWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", ControllerController, :index
+    get "/:id", ControllerController, :show
   end
 
   # Other scopes may use custom stacks.
