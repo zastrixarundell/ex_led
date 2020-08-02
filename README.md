@@ -1,4 +1,5 @@
 # ExLed
+A Phoenix webserver which uses websockets to send DEC data to an ESP8266 which utilizes an IR to send NEC information.
 
 To start your Phoenix server:
 
