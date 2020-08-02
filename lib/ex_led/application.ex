@@ -9,9 +9,10 @@ defmodule ExLed.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      ExLedWeb.Endpoint
+      ExLedWeb.Endpoint,
       # Starts a worker by calling: ExLed.Worker.start_link(arg)
       # {ExLed.Worker, arg},
+      {ExLed.Controller.Watcher, :controller}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
