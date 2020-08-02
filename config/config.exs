@@ -26,6 +26,10 @@ config :phoenix, :json_library, Jason
 config :ex_led, ExLedWeb.ControllerSocket,
   secret_auth_key: "SECRET_SAYS_WHAT"
 
+config :ex_led, ExLedWeb.Router,
+  username: System.get_env("USERNAME") || "username",
+  password: System.get_env("PASSWORD") || "password"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

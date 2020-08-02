@@ -2,7 +2,6 @@ defmodule ExLedWeb.ControllerController do
   use ExLedWeb, :controller
 
   alias ExLed.Controllers
-  alias ExLed.Controllers.Controller
   alias ExLedWeb.ControllerChannel
 
   def index(conn, _params) do
@@ -12,7 +11,14 @@ defmodule ExLedWeb.ControllerController do
 
   def show(conn, %{"id" => id}) do
     controller = Controllers.get_controller!(id)
-    render(conn, "show.html", controller: controller)
+
+    if !!controller do
+      render(conn, "show.html", controller: controller)
+    else
+      conn
+      |> put_flash(:error, "Controller #{id} not found!")
+      |> redirect(to: Routes.controller_path(conn, :index))
+    end
   end
 
   def update(conn, %{"id" => id, "code" => code}) do

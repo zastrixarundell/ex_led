@@ -1,5 +1,6 @@
 defmodule ExLedWeb.Router do
   use ExLedWeb, :router
+  import Plug.BasicAuth
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -7,6 +8,7 @@ defmodule ExLedWeb.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug :basic_auth, Application.get_env(:ex_led, __MODULE__)
   end
 
   pipeline :api do
