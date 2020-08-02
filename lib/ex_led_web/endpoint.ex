@@ -10,7 +10,7 @@ defmodule ExLedWeb.Endpoint do
     signing_salt: "U/9vogNB"
   ]
 
-  socket "/socket", ExLedWeb.UserSocket,
+  socket "/controller", ExLedWeb.ControllerSocket,
     websocket: true,
     longpoll: false
 
