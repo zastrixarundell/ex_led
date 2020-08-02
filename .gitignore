@@ -35,3 +35,9 @@ npm-debug.log
 
 # Created from VScode plugin
 /.elixir_ls/
+
+# C config vars
+/src/Config.h
+
+# Output for Arduino code compilation
+/.output
