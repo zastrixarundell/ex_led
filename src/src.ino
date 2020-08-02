@@ -55,7 +55,7 @@ void setup()
   client.onEvent(onEventsCallback);
 
   #if defined(ORIGIN)
-    client.addHeader("Origin", ORIGIN)
+    client.addHeader("Origin", ORIGIN);
   #endif
 
   client.connect(websocketUrl);
