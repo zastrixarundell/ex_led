@@ -26,6 +26,11 @@ channel.join()
 
 var output = window.location.href.split("/").pop();
 
-$('.controller-button').click(function(event) {;
-    channel.push('button:press', {id: output, code: parseInt(event.target.id, 16)});
-});
+let elements = document.getElementsByClassName("controller-button");
+
+for(let i = 0; i < elements.length; i++)
+    elements[i].addEventListener('click', sendClick, false);
+
+function sendClick(click){
+    channel.push('button:press', {id: output, code: parseInt(click.target.id, 16)});
+}
