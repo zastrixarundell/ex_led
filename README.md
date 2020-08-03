@@ -50,8 +50,10 @@ Currently the code works by extracting the HEX IDs of `button.controller-button#
 
 An example of a button which send the hex code `0xF0F` would be:
 ```html
-<button id="0xF0F" class="controller-button">Custom button</button>
+<button class="controller-button" id="0xF0F">Custom button</button>
 ```
+
+Or you can use Emmet to generate it: `button.controller-button#0xF0F`, and then set the button text.
 
 ## Codes
 I've found this snipped of code which has the correct HEX values for the IR data. It's for both the 24 and 44 button remote but I only had a 24 button reciever here.
