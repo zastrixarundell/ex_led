@@ -55,5 +55,5 @@ void loop()
 	connection.sendHeartbeat();
 
 	if(!connection.isConnected())
-	restart();
+		restart();
 }
