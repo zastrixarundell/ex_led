@@ -45,6 +45,16 @@ Then click on the `Show` linnk on the right of the controller name and you will 
 
 ![Show image](https://raw.githubusercontent.com/zastrixarundell/ex_led/master/images/show.png "Show image")
 
+## Sending custom codes
+Currently the code works by extracting the HEX IDs of `button.controller-button#hex-code`.
+
+An example of a button which send the hex code `0xF0F` would be:
+```html
+<button class="controller-button" id="0xF0F">Custom button</button>
+```
+
+Or you can use Emmet to generate it: `button.controller-button#0xF0F`, and then set the button text.
+
 ## Codes
 I've found this snipped of code which has the correct HEX values for the IR data. It's for both the 24 and 44 button remote but I only had a 24 button reciever here.
 
