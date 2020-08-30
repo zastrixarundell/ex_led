@@ -5,7 +5,7 @@ A Phoenix webserver which uses websockets to send DEC data to an ESP8266 which u
 ## Setting everything up
 
 ### To compile your Arduino code
-You will need to declare variables in the `src/src.ino` file or create a `phoenix-api/lib/Config/Config.h` file and place the variables there. Here is an example of a `src/Config.h`:
+You will need to declare variables in the `arduino/src/main.cpp` file or create a `arduino/lib/Config/Config.h` file and place the variables there. Here is an example of a `arduino/lib/Config/Config.h`:
 ```cpp
 #define SSID "WiFi SSID"
 #define PASSWORD "This is my awesome password"
