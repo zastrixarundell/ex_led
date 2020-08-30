@@ -17,7 +17,7 @@ PhoenixConnection connection(deviceId, deviceName, websocketUrl, origin);
 
 void setup()
 {
-  	Serial.begin(115200);
+	Serial.begin(115200);
 	delay(100);
 
 	Serial.print("Connecting to ");
@@ -51,9 +51,9 @@ void (* restart) (void) = 0;
 
 void loop()
 {
-  connection.poll();
-  connection.sendHeartbeat();
+	connection.poll();
+	connection.sendHeartbeat();
 
-  if(!connection.isConnected())
-  	restart();
+	if(!connection.isConnected())
+	restart();
 }
